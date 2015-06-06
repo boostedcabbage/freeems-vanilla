@@ -253,8 +253,8 @@ const volatile fixedConfig1 fixedConfigs1 FIXEDCONF1 = {
 			disableThreshold:  RPM(7200),
 			reenableThreshold: RPM(7100)
 #elif CONFIG == CABBAGE_ID
-                        disableThreshold:  RPM(7000),
-                        reenableThreshold: RPM(6950)
+                        disableThreshold:  RPM(6700),
+                        reenableThreshold: RPM(6650)
 #else
 			disableThreshold:  RPM(5800),
 			reenableThreshold: RPM(5750)  // Come back on after injection does
