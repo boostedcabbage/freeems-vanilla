@@ -83,6 +83,9 @@ const volatile fixedConfig2 fixedConfigs2 FIXEDCONF2 = {
 #elif CONFIG == DEUCES10_ID
 		MAPMinimum:    GM1BarMin,
 		MAPRange:      GM1BarRange,
+#elif CONFIG == CABBAGE_ID
+                MAPMinimum:    MPX4250AMin,
+                MAPRange:      MPX4250ARange,
 #else
 		MAPMinimum:    MPX4250AMin,
 		MAPRange:      MPX4250ARange,
@@ -133,6 +136,9 @@ const volatile fixedConfig2 fixedConfigs2 FIXEDCONF2 = {
 #elif CONFIG == SNOTROCKET_ID
 		TPSMinimumADC: 185,
 		TPSMaximumADC: 809
+#elif CONFIG == CABBAGE_ID // temp placeholder until values are figured
+                TPSMinimumADC: 0,
+                TPSMaximumADC: ADC_MAX_VALUE
 #else // Default for a normal TPS slope
 		TPSMinimumADC: 0,
 		TPSMaximumADC: ADC_MAX_VALUE
