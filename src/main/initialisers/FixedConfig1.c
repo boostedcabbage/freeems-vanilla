@@ -225,6 +225,9 @@ const volatile fixedConfig1 fixedConfigs1 FIXEDCONF1 = {
 #elif CONFIG == SCAVENGER_ID
 			disableThreshold:  RPM(7200),
 			reenableThreshold: RPM(7150)
+#elif CONFIG == CABBAGE_ID
+                        disableThreshold:  RPM(6700),
+                        reenableThreshold: RPM(6675)
 #else
 			disableThreshold:  RPM(5850),
 			reenableThreshold: RPM(5800)  // Come back on before ignition does
