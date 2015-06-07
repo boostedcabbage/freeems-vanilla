@@ -72,7 +72,7 @@
 //efine WIKISPEEDR18_ID 26 // WikiSpeed's first car with R18A1 Honda
 //efine JOSHSB18MINI_ID 27 // Josh's LS-VTEC powered Mini
 //efine BMSTBO_ID       28 // Piimae's E7 Corolla w/ 4A-GE 16V turbo
-#define CABBAGE_ID	29 // boostedcabbage's 1995 Dodge Neon
+#define CABBAGE_ID	36 // boostedcabbage's 1995 Dodge Neon
 
 
 // Convert labels into IDs for use in code and set the ID string
