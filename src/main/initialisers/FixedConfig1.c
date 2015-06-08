@@ -206,7 +206,7 @@ const volatile fixedConfig1 fixedConfigs1 FIXEDCONF1 = {
         anglesOfTDC: {ANGLE(0), ANGLE(180), ANGLE(360), ANGLE(540), ANGLE(0), ANGLE(180), ANGLE(360), ANGLE(540)},
         outputEventPinNumbers:       {0,1,0,1,2,4,5,3}, // Sequential (2 == Port-T4) (Pulled a Peter)
         schedulingConfigurationBits: {0,0,0,0,1,1,1,1}, // First 4 ign, Last 4 fuel
-        decoderEngineOffset:           ANGLE(0.00), 
+		decoderEngineOffset:           ANGLE(0.00),
         numberOfConfiguredOutputEvents:          8, // 4 coil events and  4 injector events.
         numberOfInjectionsPerEngineCycle:        1  // Sequential Fueling!
 
