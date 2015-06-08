@@ -202,6 +202,14 @@ const volatile fixedConfig1 fixedConfigs1 FIXEDCONF1 = {
 		numberOfConfiguredOutputEvents:              8, // See two lines above
 		numberOfInjectionsPerEngineCycle:            2  // Semi-sequential, for now.
 
+#elif CONFIG == CABBAGE_ID // Firing order 1-3-4-2
+        //anglesOfTDC: {ANGLE(0), ANGLE(180), ANGLE(360), ANGLE(540), ANGLE(0), ANGLE(180), ANGLE(360), ANGLE(540)},
+        outputEventPinNumbers:       {0,1,0,1,2,4,5,3}, // Sequential (2 == Port-T4) (Pulled a Peter)
+        schedulingConfigurationBits: {0,0,0,0,1,1,1,1}, // First 4 ign, Last 4 fuel
+        decoderEngineOffset:           ANGLE(0.00), // GM DIS 2x Reference signal is at 0 degrees.
+        numberOfConfiguredOutputEvents:          8, // 4 coil events and  4 injector events.
+        numberOfInjectionsPerEngineCycle:        1  // Sequential Fueling!
+
 #else // Nothing scheduled by default, no sensible default for all possible vehicle setups.
 		anglesOfTDC:                            {}, // Depends on cylinder count and other variables
 		outputEventPinNumbers:       {0,1,2,3,4,5}, // Default to a variety of pins for testing purposes. Note: Won't do anything without
