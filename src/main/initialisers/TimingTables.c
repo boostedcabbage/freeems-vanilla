@@ -92,6 +92,8 @@ const volatile mainTable IgnitionAdvanceTableMainFlashV TIMETABLESD = {
 #include "../data/tables/axis/HotelHyundai-RPM.h"
 #elif CONFIG == SCAVENGER_ID
 #include "../data/tables/axis/ScavengersMiata-RPM.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-RPM.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/axis/DefaultWith400Spacing-RPM.h"
 #else
@@ -121,6 +123,8 @@ const volatile mainTable IgnitionAdvanceTableMainFlashV TIMETABLESD = {
 #include "../data/tables/axis/HotelHyundai-Load.h"
 #elif CONFIG == SCAVENGER_ID
 #include "../data/tables/axis/ScavengersMiata-Load.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-Load.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/axis/DefaultWith10and20SplitSpacing-Load.h"
 #else
@@ -152,6 +156,8 @@ const volatile mainTable IgnitionAdvanceTableMainFlashV TIMETABLESD = {
 #include "../data/tables/ign/HotelHyundaiIgnitionTiming.h"
 #elif CONFIG == SCAVENGER_ID
 #include "../data/tables/ign/ScavengerTiming24RPMx19Load.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/ign/Cabbage-Load.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/ign/DefaultTiming24RPMx19Load.h"
 #else
