@@ -90,6 +90,8 @@ const volatile mainTable VETableMainFlashV FUELTABLESD = {
 #include "../data/tables/axis/ScavengersMiata-RPM.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/axis/SimsVolvo-RPM.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-RPM.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/axis/DefaultWith400Spacing-RPM.h"
 #else
@@ -119,6 +121,8 @@ const volatile mainTable VETableMainFlashV FUELTABLESD = {
 #include "../data/tables/axis/ScavengersMiata-Load.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/axis/SimsVolvo-Load.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-Load.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/axis/DefaultWith10and20SplitSpacing-Load.h"
 #else
@@ -148,6 +152,8 @@ const volatile mainTable VETableMainFlashV FUELTABLESD = {
 #include "../data/tables/ve/ScavengerVE24RPMx19Load.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/ve/SimsVolvoVE.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/ve/Cabbage-VE.h"
 #elif CONFIG == DEFAULT_ID
 #include "../data/tables/ve/DefaultVE24RPMx19Load.h"
 #else
@@ -216,6 +222,8 @@ const volatile mainTable LambdaTableFlashV FUELTABLESD = {
 #include "../data/tables/axis/Deuces3100-RPM.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/axis/SimsVolvo-RPM.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-RPM.h"
 #else
 #include "../data/tables/axis/FredsTruck-RPM.h"
 #endif
@@ -233,6 +241,8 @@ const volatile mainTable LambdaTableFlashV FUELTABLESD = {
 #include "../data/tables/axis/Deuces3100-Load.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/axis/SimsVolvo-Load.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/axis/Cabbage-Load.h"
 #else
 #include "../data/tables/axis/FredsTruck-Load.h"
 #endif
@@ -250,6 +260,8 @@ const volatile mainTable LambdaTableFlashV FUELTABLESD = {
 #include "../data/tables/lambda/DeucesS10Lambda.h"
 #elif CONFIG == SNOTROCKET_ID
 #include "../data/tables/lambda/SimsVolvoLambda.h"
+#elif CONFIG == CABBAGE_ID
+#include "../data/tables/lambda/Cabbage-Lambda.h"
 #else
 #include "../data/tables/lambda/GenericLambda.h" // Reasonable starting point
 #endif
