@@ -63,6 +63,9 @@ const volatile mainTable VETableMainFlashV FUELTABLESD = {
 #elif CONFIG == SNOTROCKET_ID
 	RPMLength:  12,
 	LoadLength: 8,
+#elif CONFIG == CABBAGE_ID
+	RPMLength:  19,
+	LoadLength: 19,
 #else
 	RPMLength:  16,
 	LoadLength: 16,
@@ -203,6 +206,9 @@ const volatile mainTable LambdaTableFlashV FUELTABLESD = {
 #elif CONFIG == SNOTROCKET_ID
 	RPMLength:  12,
 	LoadLength: 8,
+#elif CONFIG == CABBAGE_ID
+	RPMLength:  19,
+	LoadLength: 19,
 #else
 	RPMLength:  16,
 	LoadLength: 16,

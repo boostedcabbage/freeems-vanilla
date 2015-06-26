@@ -65,6 +65,9 @@ const volatile mainTable IgnitionAdvanceTableMainFlashV TIMETABLESD = {
 #elif CONFIG == SCAVENGER_ID
 	RPMLength:  24,
 	LoadLength: 19,
+#elif CONFIG == CABBAGE_ID
+	RPMLength:  19,
+	LoadLength: 19,
 #else
 	RPMLength:  16,
 	LoadLength: 16,
