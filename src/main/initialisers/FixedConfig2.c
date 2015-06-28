@@ -84,8 +84,8 @@ const volatile fixedConfig2 fixedConfigs2 FIXEDCONF2 = {
 		MAPMinimum:    GM1BarMin,
 		MAPRange:      GM1BarRange,
 #elif CONFIG == CABBAGE_ID
-                MAPMinimum:    MPX4250AMin,
-                MAPRange:      MPX4250ARange,
+		MAPMinimum:    MPXH6400AMin,
+		MAPRange:      MPXH6400ARange,
 #else
 		MAPMinimum:    MPX4250AMin,
 		MAPRange:      MPX4250ARange,
@@ -107,6 +107,9 @@ const volatile fixedConfig2 fixedConfigs2 FIXEDCONF2 = {
 #elif CONFIG == HOTEL_ID
 		EGOMinimum:    AFR1020LambdaMin,
 		EGORange:      AFR1020LambdaRange,
+#elif CONFIG == CABBAGE_ID // http://www.schnitzracing.com/manuals/AEMWBK.pdf
+		EGOMinimum:    LAMBDA(0.683),
+		EGORange:      (LAMBDA(1.365) - LAMBDA(0.683)),
 #else
 		EGOMinimum:    LC1LambdaMin,
 		EGORange:      LC1LambdaRange,
